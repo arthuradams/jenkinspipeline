@@ -7,10 +7,12 @@ pipeline {
             }
         }
         stage('build') {
-            echo 'Building...'
-        }
+            steps {
+                echo 'Building...'
+            }
         stage('deploy') {
-            echo 'Deploying...'
-        }
+            steps {
+                echo 'Deploying...'
+            }
     }
 }
